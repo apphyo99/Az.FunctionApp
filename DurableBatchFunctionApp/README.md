@@ -9,3 +9,8 @@ Create a new Durable Functions project:
 Add the Durable Functions package to your project:
 
 ```dotnet add package Microsoft.Azure.Functions.Worker.Extensions.DurableTask```
+
+
+<b> Step 3: Run the app </b>
+
+```curl -X POST http://localhost:7071/api/StartBatchProcessing -H "Content-Type: application/json" -d '["apple", "orange", "melon"]' ```
